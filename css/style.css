@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* ========================================
+MAIN CSS FILE
+CREATED: 2022-04-18
+===========================================
+PROJECT: Festa Junina de Votorantim 2022
+BY: João Victor Garcia
+=========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@300;400;600&display=swap');
+:root{
+    font-size: 16px;
+    --standard-dark: #262626;
+    --maximum-red: #e31918ff;
+    --venetian-red: #cc1616ff;
+    --sunglow: #ffcb00ff;
+    --orange-yellow: #e5b600ff;
+    --space-cadet: #202249ff;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f0f0f0;
+}
