@@ -6,15 +6,15 @@ CREATED: 2022-04-18
 PROJECT: Festa Junina de Votorantim 2022
 BY: João Victor Garcia
 =========================================== */
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@300;400;600;800&display=swap');
 :root{
     font-size: 16px;
     --standard-dark: #262626;
-    --maximum-red: #e31918ff;
-    --venetian-red: #cc1616ff;
-    --sunglow: #ffcb00ff;
-    --orange-yellow: #e5b600ff;
-    --space-cadet: #202249ff;
+    --maximum-red: #e31918;
+    --venetian-red: #cc1616;
+    --sunglow: #ffcb00;
+    --orange-yellow: #e5b600;
+    --space-cadet: #202249;
 }
 html{
     font-family: 'Poppins', sans-serif;
@@ -24,6 +24,16 @@ body{
 }
 main{
     margin-top: 100px;
+}
+.main-title{
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--standard-dark);
+    margin-bottom: 0rem;
+}
+.main-title .hero-effect{
+    color: var(--orange-yellow);
+    font-style: italic;
 }
 /* NAVBAR CONTENT */
 nav.navbar{
@@ -41,9 +51,6 @@ nav.navbar .navbar-brand img{
     transition: .3s ease;
 }
 /* NAVBAR UL */
-.navbar-nav{
-    height: 75px;
-}
 .navbar-nav .nav-item{
     display: flex;
     align-items: center;
@@ -85,3 +92,50 @@ nav.navbar.nav-standard .navbar-nav .nav-item:hover .nav-link{
 }
 
 /* SHOW PAGE CSS */
+.shows-content{
+    margin-top: 150px;
+}
+.shows-content .sub-title{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: -5px;
+}
+.week-shows{
+    position: relative;
+    /* border: 3px solid var(--venetian-red); */
+    /* background-image: url(../img/risco.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover; */
+}
+.week-shows .back-img{
+    position: absolute;
+    top: 10px;
+    left: -5%;
+    width: 110%;
+    z-index: -1;
+}
+.week-text{
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.week-inside{
+    text-align: center;
+    text-transform: uppercase;
+}
+.week-inside h3{
+    font-size: 2.5em;
+    margin-bottom: 0rem;
+    margin-block-end: 0em;
+    font-weight: 800;
+    transition: .3s ease;
+}
+.week-inside p{
+    font-size: 1.3em;
+}
+
+.week-inside:hover h3{
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
+    font-size: 2.6em;
+}
