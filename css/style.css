@@ -22,3 +22,66 @@ html{
 body{
     background-color: #f0f0f0;
 }
+main{
+    margin-top: 100px;
+}
+/* NAVBAR CONTENT */
+nav.navbar{
+    padding: 2em;
+    background-color: transparent;
+    font-size: 1.1em;
+    transition: .3s ease;
+}
+nav.navbar .navbar-brand{
+    padding: 0;
+}
+nav.navbar .navbar-brand img{
+    width: auto;
+    height: 125px;
+    transition: .3s ease;
+}
+/* NAVBAR UL */
+.navbar-nav{
+    height: 75px;
+}
+.navbar-nav .nav-item{
+    display: flex;
+    align-items: center;
+    transition: .3s ease;
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--space-cadet);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0em 0.7em;
+    transition: .3s ease;
+}
+
+/* NAVBAR IF IS SCROLL OR NOT IN INDEX */
+nav.navbar.nav-scroll,
+nav.navbar.nav-standard{
+    padding: 0em;
+    background-color: var(--orange-yellow);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav.navbar.nav-scroll .navbar-brand img,
+nav.navbar.nav-standard .navbar-brand img{
+    width: auto;
+    height: 75px;
+    transition: .3s ease;
+}
+
+nav.navbar.nav-scroll .navbar-nav .nav-item .nav-link,
+nav.navbar.nav-standard .navbar-nav .nav-item .nav-link{
+    font-size: 1em;
+}
+
+/* NAVBAR HOVERS */
+nav.navbar.nav-scroll .navbar-nav .nav-item:hover .nav-link,
+nav.navbar.nav-standard .navbar-nav .nav-item:hover .nav-link{
+    border-bottom: 1px solid var(--space-cadet);
+    color: var(--space-cadet);
+}
+
+/* SHOW PAGE CSS */
