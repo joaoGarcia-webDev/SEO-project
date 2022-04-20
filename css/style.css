@@ -40,6 +40,32 @@ main, article{
     font-weight: 400;
 }
 /* NAVBAR CONTENT */
+header{
+    overflow-x: hidden;
+
+}
+header .left-nav{
+    border: 10px solid var(--orange-yellow)
+}
+header .left-nav .text-header{
+    margin-top: 15em;
+    padding: 4em 3.5em;
+    margin-bottom: 5em;
+}
+header .left-nav .text-header .main-title{
+    font-size: 5.5em;
+    font-weight: 800;
+    color: var(--space-cadet)
+}
+header .right-nav{
+    padding-left: 0;
+}
+header .right-nav img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 55em;
+}
 nav.navbar{
     padding: 2em;
     background-color: transparent;
@@ -61,7 +87,7 @@ nav.navbar .navbar-brand img{
     transition: .3s ease;
 }
 .navbar-nav .nav-item .nav-link{
-    color: var(--space-cadet);
+    color: var(--orange-yellow);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
@@ -82,17 +108,38 @@ nav.navbar.nav-standard .navbar-brand img{
     height: 75px;
     transition: .3s ease;
 }
-
 nav.navbar.nav-scroll .navbar-nav .nav-item .nav-link,
 nav.navbar.nav-standard .navbar-nav .nav-item .nav-link{
     font-size: 1em;
+    color: var(--space-cadet);
+}
+button.nav-toggler + .collapse{
+    background-color: var(--space-cadet);
 }
 
 /* NAVBAR HOVERS */
+nav.navbar .navbar-nav .nav-item:hover .nav-link{
+    color: var(--sunglow);
+}
 nav.navbar.nav-scroll .navbar-nav .nav-item:hover .nav-link,
 nav.navbar.nav-standard .navbar-nav .nav-item:hover .nav-link{
     border-bottom: 1px solid var(--space-cadet);
     color: var(--space-cadet);
+}
+.btn-standard{
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--orange-yellow);
+    border: 1px solid var(--sunglow);
+    padding: 0.3em 1em;
+    font-size: 1.2em;
+    color: var(--standard-dark);
+    font-weight: 800;
+    transition: .3s ease;
+}
+.btn-standard:hover{
+    color: var(--standard-dark);
+    background-color: var(--sunglow);
 }
 
 /* SHOW PAGE CSS */
@@ -142,11 +189,11 @@ nav.navbar.nav-standard .navbar-nav .nav-item:hover .nav-link{
     font-weight: 800;
     text-decoration: underline;
 }
-.info-text .flow-text{
+.flow-text{
     font-size: 1.2em;
     font-weight: 400;
 }
-.info-text .flow-text span{
+.flow-text span{
     color: var(--space-cadet);
     font-weight: 800;
 }
@@ -179,10 +226,60 @@ button.contact-btn{
     color: var(--standard-dark);
     font-weight: 800;
     transition: .3s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 button.contact-btn:hover{
     background-color: var(--sunglow);
     border: 1px solid var(--sunglow);
     color: var(--standard-dark);
 
+}
+
+/* FOOTER CSS */
+footer{
+    background-color: var(--orange-yellow);
+    margin-top: 8em;
+    padding: 2.5em 1.5em 4em 1.5em;
+    position: relative;
+}
+footer nav .footer-list li a{
+    font-size: 1.1em;
+    color: var(--standard-dark);
+    font-weight: 600;
+}
+footer .copyright{
+    background-color: var(--standard-dark);
+    color: var(--orange-yellow);
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width:1101px) and (max-width:1400px){
+    header .left-nav .text-header{
+        margin-top: 10em;
+    }
+    header .left-nav .text-header .main-title{
+        font-size: 4em;
+    }
+}
+@media screen and (min-width:990px) and (max-width:1100px){
+    header .left-nav .text-header{
+        margin-top: 5em;
+    }
+    header .left-nav .text-header .main-title{
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width:989px){
+    header .left-nav{
+        border: none;
+    }
+    header .left-nav .text-header{
+        margin-top: 7em;
+    }
+    
 }
