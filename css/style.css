@@ -155,8 +155,34 @@ nav.navbar.nav-standard .navbar-nav .nav-item:hover .nav-link{
     font-weight: 800;
     text-decoration: underline;
 }
-
 .map-frame iframe{
     width: 100%;
     height: 100%;
+}
+
+/* CONTATO CSS */
+.card{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    flex-direction: row;
+}
+
+.card .contato-img{
+    text-align: right;
+    padding-right: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+button.contact-btn{
+    background-color: var(--orange-yellow);
+    border: 1px solid var(--sunglow);
+    padding: 0.3em 1em;
+    font-size: 1.2em;
+    color: var(--standard-dark);
+    font-weight: 800;
+    transition: .3s ease;
+}
+button.contact-btn:hover{
+    background-color: var(--sunglow);
+    border: 1px solid var(--sunglow);
+    color: var(--standard-dark);
+
 }

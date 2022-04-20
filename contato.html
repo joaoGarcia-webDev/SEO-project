@@ -47,7 +47,47 @@
         </nav>
     </header>
 
-    
+    <main class="container-xl">
+        <h1 class="main-title">Nos Diga algo sobre a <span class="hero-effect">Festa Junina de Votorantim</span></h1>
+        <div class="card row justify-content-between">
+            <div class="card-body col-sm-12 col-md-6 col-lg-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email"
+                        class="form-control"
+                        id="email"
+                        aria-describedby="subEmail">
+                        <div id="subEmail" class="form-text">Em caso de resposta por parte da equipe, o email sera enviado para este endereço</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">confirme o E-mail</label>
+                        <input type="email"
+                        class="form-control"
+                        id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="textArea">Qual sua mensagem?</label>
+                        <textarea class="form-control" placeholder="Digite sua mensagem aqui." id="textArea" style="height: 100px"></textarea>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="checkBox">
+                        <label class="form-check-label" for="checkBox">Concordo com os <a>Termos de uso.</a></label>
+                    </div>
+                    <button type="submit" class="btn mt-5 btn-primary contact-btn">Enviar</button>
+                </form>
+            </div>
+            <hr class="d-block d-md-none my-5">
+            <div class=" col-sm-12 col-md-5 col-lg-5 contato-img text-center text-lg-end">
+                <img src="img/contato-img.jpg" alt="Uma imagem promocional da Festa Junina, com a logo centralizada na parte de cima e a pergunta, O que não pode faltar na Festa Junina?." class="img-fluid">
+            </div>
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
